@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk>
+	<!-- [Optional]
+	Uncomment if you want to defines the application's name 
+	
+	<preference>
+		<name>org.zkoss.zk.ui.WebApp.name</name>
+		<value>zkquarkus</value>
+	</preference>
+	-->
+	
+<!-- 	<listener> -->
+<!-- 	    <listener-class>org.zkoss.zkmax.au.websocket.WebSocketWebAppInit</listener-class> -->
+<!-- 	</listener> -->
+	 
+	<!-- optional -->
+<!-- 	<library-property> -->
+<!-- 	    <name>org.zkoss.zkmax.au.websocket.WebSocketEndPoint.urlPattern</name> -->
+<!-- 	    <value>/myappws/</value> -->
+<!-- 	</library-property> -->
+
+	<client-config>
+		<debug-js>true</debug-js>
+	</client-config>
+
+	<system-config>
+		<disable-event-thread/>
+		<ui-factory-class>org.zkoss.zk.ui.http.SerializableUiFactory</ui-factory-class>
+	</system-config>
+	
+</zk>

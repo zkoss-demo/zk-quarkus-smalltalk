@@ -1,0 +1,6 @@
+<zk>
+	 <window apply="org.zkoss.classic.HelloWorldComposer" title="My First ZK Application" border="normal">
+		<div>Hello World!</div>
+		<button id="btn" label="Click me!"/>
+	 </window>
+</zk>
