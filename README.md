@@ -24,6 +24,11 @@ Be aware that it’s not an _über-jar_ as the dependencies are copied into the 
 
 The application is now runnable using `java -jar target/quarkus-app/quarkus-run.jar`.
 
+** NOTE REGARDING UBER JAR in current latest quarkus release (3.11.2) **
+Current latest quarkus release creates the uber jar by overwriting files if multiple entries share the same relative path.
+This causes ZK to be unable to load dependencies definitions during startup.
+As result, fast-jar is recommended over uber-jar, since fast-jar doesn't overwrite dependencies files, but loads the original jars instead.
+
 If you want to build an _über-jar_, execute the following command:
 ```shell script
 ./mvnw package -Dquarkus.package.type=uber-jar
